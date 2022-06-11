@@ -26,6 +26,11 @@ $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
 Set-Alias ll ls
 Set-Alias grep findstr
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
+Set-Alias head 'C:\Program Files\Git\usr\bin\head.exe'
+Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
+Set-Alias wc 'C:\Program Files\Git\usr\bin\wc.exe'
+Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
+Set-Alias who 'C:\Program Files\Git\usr\bin\who.exe'
 
 # Utilities
 function which ($command) {
