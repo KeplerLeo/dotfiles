@@ -1,4 +1,4 @@
-## PowerShell setup (Windows)
+# PowerShell setup (Windows)
 
 - [Scoop](https://scoop.sh/) - A command-line installer
 - [Git for Windows](https://gitforwindows.org/)
