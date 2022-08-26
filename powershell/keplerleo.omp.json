@@ -9,8 +9,9 @@
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": " {{ .UserName }} ",
-          "type": "shell"
+          "template": " {{ .Icon }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "os"
         },
         {
           "background": "#ef5350",
