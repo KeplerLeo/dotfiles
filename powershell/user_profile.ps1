@@ -4,6 +4,7 @@
 # Prompt
 $omp_config = Join-Path $PSScriptRoot ".\keplerleo.omp.json"
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
+#oh-my-posh init pwsh --config C:\Users\leoke\AppData\Local\Programs\oh-my-posh\themes/jblab_2021.omp.json | Invoke-Expression
 
 # Posh Git
 Import-Module posh-git
@@ -23,8 +24,8 @@ Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
 $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
 
 # Alias
-Set-Alias ll ls
 Set-Alias grep findstr
+Set-Alias ll ls
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 Set-Alias head 'C:\Program Files\Git\usr\bin\head.exe'
 Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
