@@ -5,9 +5,9 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#0077c2",
+          "background": "#007acc",
           "foreground": "#ffffff",
-          "leading_diamond": "\u256d\u2500\ue0b6",
+          "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": " {{ .UserName }} ",
           "type": "shell"
@@ -73,7 +73,7 @@
           "type": "node"
         },
         {
-          "background": "#40c4ff",
+          "background": "#007acc",
           "foreground": "#ffffff",
           "invert_powerline": true,
           "leading_diamond": " \ue0b6",
@@ -90,12 +90,6 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#21c7c7",
-          "style": "plain",
-          "template": "\u2570\u2500",
-          "type": "text"
-        },
-        {
           "foreground": "#e0f8ff",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ef5350{{ end }}"
@@ -111,6 +105,7 @@
       "type": "prompt"
     }
   ],
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"🏠\"}} @ {{.HostName}}",
   "osc99": true,
   "version": 2
 }
