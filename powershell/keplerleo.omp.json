@@ -19,8 +19,8 @@
           "properties": {
             "root_icon": "\uf292"
           },
-          "style": "diamond",
-          "template": "<parentBackground>\ue0b0</> \uf0e7 ",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
           "type": "root"
         },
         {
@@ -106,7 +106,7 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"�\"}} @ {{.HostName}}",
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"🏠\"}} @ {{.HostName}}",
   "osc99": true,
   "version": 2
 }
