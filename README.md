@@ -1,6 +1,7 @@
 # PowerShell setup (Windows)
 
 - [Scoop](https://scoop.sh/) - A command-line installer
+- [Gow](https://github.com/bmatzelle/gow) - Unix utils
 - [Git for Windows](https://gitforwindows.org/)
 - [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
 - [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
