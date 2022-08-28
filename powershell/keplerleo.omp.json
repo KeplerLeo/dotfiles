@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#007acc",
+          "background": "#007fd4",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -24,25 +24,25 @@
           "type": "root"
         },
         {
-          "background": "#444444",
+          "background": "#252526",
           "foreground": "#E4E4E4",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "style": "full"
+            "style": "folder"
           },
           "style": "powerline",
           "template": " {{ .Path }} ",
           "type": "path"
         },
         {
-          "background": "#FFFB38",
+          "background": "#333333",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#ffeb95{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#c5e478{{ end }}",
             "{{ if gt .Ahead 0 }}#C792EA{{ end }}",
             "{{ if gt .Behind 0 }}#C792EA{{ end }}"
           ],
-          "foreground": "#011627",
+          "foreground": "#E4E4E4",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "branch_icon": "\ue725 ",
@@ -60,8 +60,8 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#303030",
-          "foreground": "#3C873A",
+          "background": "#2a2d2e",
+          "foreground": "#4b893f",
           "leading_diamond": " \ue0b6",
           "properties": {
             "fetch_package_manager": true,
@@ -74,7 +74,7 @@
           "type": "node"
         },
         {
-          "background": "#007acc",
+          "background": "#007fd4",
           "foreground": "#ffffff",
           "invert_powerline": true,
           "leading_diamond": " \ue0b6",
