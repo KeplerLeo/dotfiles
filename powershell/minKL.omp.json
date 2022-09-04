@@ -50,5 +50,6 @@
       "type": "prompt"
     }
   ],
+  "console_title_template": "{{ .UserName }}@{{ .HostName }}: {{.Folder}}",
   "version": 2
 }
