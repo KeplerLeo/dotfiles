@@ -22,7 +22,7 @@
             "fetch_upstream_icon": false
           },
           "style": "plain",
-          "template": "HEAD:{{ .UpstreamIcon }}{{ .HEAD }} ",
+          "template": "{{ .HEAD }} ",
           "type": "git"
         },
         {
