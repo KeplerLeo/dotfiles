@@ -3,8 +3,8 @@
 
 # Prompt
 $omp_config = Join-Path $PSScriptRoot ".\keplerleo.omp.json"
-oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
-#oh-my-posh init pwsh --config C:\Users\leoke\AppData\Local\Programs\oh-my-posh\themes/jblab_2021.omp.json | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
+oh-my-posh init pwsh --config C:\Users\leoke\AppData\Local\Programs\oh-my-posh\themes/robbyrussel.omp.json | Invoke-Expression
 
 # Posh Git
 Import-Module posh-git
@@ -18,7 +18,7 @@ Set-PSReadLineOption -PredictionSource History
 
 # Fzf
 import-Module PSFzf
-Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+# Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
 
 # Env
 $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
