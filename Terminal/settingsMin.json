@@ -1,8 +1,7 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
             "command": "find",
             "keys": "ctrl+shift+f"
@@ -12,16 +11,14 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -37,19 +34,16 @@
     "initialRows": 55,
     "language": "en-US",
     "launchMode": "default",
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "antialiasingMode": "cleartype",
             "colorScheme": "Min Powershell",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
-            "font": 
-            {
+            "font": {
                 "face": "FiraCode NFM",
                 "size": 10,
-                "weight": "semi-light"
+                "weight": "semi-bold"
             },
             "intenseTextStyle": "all",
             "opacity": 100,
@@ -58,8 +52,7 @@
             "suppressApplicationTitle": true,
             "useAcrylic": false
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -87,8 +80,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -146,7 +138,7 @@
             "brightPurple": "#B4009E",
             "brightRed": "#E74856",
             "brightWhite": "#F2F2F2",
-            "brightYellow": "#F9F1A5",
+            "brightYellow": "#FFFFFF",
             "cursorColor": "#FFFFFF",
             "cyan": "#3A96DD",
             "foreground": "#FFFFFF",
