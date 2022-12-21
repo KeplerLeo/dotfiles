@@ -1,7 +1,8 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
             "command": "find",
             "keys": "ctrl+shift+f"
@@ -11,14 +12,16 @@
             "keys": "ctrl+v"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -26,7 +29,7 @@
             "keys": "alt+shift+d"
         }
     ],
-    "alwaysShowTabs": true,
+    "alwaysShowTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
@@ -34,13 +37,16 @@
     "initialRows": 55,
     "language": "en-US",
     "launchMode": "default",
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "antialiasingMode": "cleartype",
             "colorScheme": "Min Powershell",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
-            "font": {
+            "font": 
+            {
                 "face": "FiraCode NFM",
                 "size": 10,
                 "weight": "semi-bold"
@@ -52,7 +58,8 @@
             "suppressApplicationTitle": true,
             "useAcrylic": false
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -80,7 +87,8 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -128,7 +136,7 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#0A0A0A",
+            "background": "#000000",
             "black": "#0C0C0C",
             "blue": "#0037DA",
             "brightBlack": "#767676",
@@ -335,8 +343,8 @@
             "yellow": "#808000"
         }
     ],
-    "showTabsInTitlebar": true,
-    "showTerminalTitleInTitlebar": true,
+    "showTabsInTitlebar": false,
+    "showTerminalTitleInTitlebar": false,
     "snapToGridOnResize": false,
     "useAcrylicInTabRow": false
 }
