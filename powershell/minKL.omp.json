@@ -31,7 +31,7 @@
             "style": "agnoster_short"
           },
           "style": "plain",
-          "template": "{{ .Path }} ",
+          "template": "{{ .PWD }} ",
           "type": "path"
         },
         {
@@ -50,6 +50,7 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{ .UserName }}@{{ .HostName }}: {{.Folder}}",
-  "version": 2
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"🏠\"}} @ {{.HostName}}",
+  "osc99": true,
+  "version": 3
 }
