@@ -1,8 +1,7 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
             "command": "find",
             "keys": "ctrl+shift+f"
@@ -12,16 +11,14 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -37,29 +34,18 @@
     "initialRows": 45,
     "language": "en-US",
     "launchMode": "default",
-    "profiles": 
-    {
-        "defaults": 
-        {
-            "antialiasingMode": "cleartype",
-            "colorScheme": "Min Dracula",
+    "profiles": {
+        "defaults": {
+            "colorScheme": "One Half Light(modded)",
             "cursorShape": "filledBox",
-            "experimental.retroTerminalEffect": false,
-            "font": 
-            {
-                "face": "MesloLGM NF",
-                "size": 10,
-                "weight": "normal"
+            "font": {
+                "face": "Inconsolata NFM",
+                "weight": "bold"
             },
-            "intenseTextStyle": "all",
-            "opacity": 100,
             "padding": "4",
-            "startingDirectory": "%USERPROFILE%",
-            "suppressApplicationTitle": true,
-            "useAcrylic": false
+            "scrollbarState": "hidden"
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -87,8 +73,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -228,6 +213,29 @@
             "yellow": "#C18301"
         },
         {
+            "background": "#FFFFFF",
+            "black": "#383A42",
+            "blue": "#0184BC",
+            "brightBlack": "#4F525D",
+            "brightBlue": "#61AFEF",
+            "brightCyan": "#56B5C1",
+            "brightGreen": "#1C7515",
+            "brightPurple": "#C577DD",
+            "brightRed": "#DF6C75",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#1A6491",
+            "cursorColor": "#000000",
+            "cyan": "#0997B3",
+            "foreground": "#000000",
+            "green": "#0C3605",
+            "name": "One Half Light(modded)",
+            "purple": "#A626A4",
+            "red": "#E45649",
+            "selectionBackground": "#808080",
+            "white": "#000000",
+            "yellow": "#C18301"
+        },
+        {
             "background": "#002B36",
             "black": "#002B36",
             "blue": "#268BD2",
@@ -346,5 +354,6 @@
     "showTabsInTitlebar": false,
     "showTerminalTitleInTitlebar": false,
     "snapToGridOnResize": false,
+    "theme": "system",
     "useAcrylicInTabRow": false
 }
