@@ -2,7 +2,7 @@
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 # Prompt
-$omp_config = Join-Path $PSScriptRoot ".\keplerleo.omp.json"
+$omp_config = Join-Path $PSScriptRoot "./minKLlight.omp.json"
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 #oh-my-posh init pwsh --config C:\Users\leoke\AppData\Local\Programs\oh-my-posh\themes/takuya.omp.json | Invoke-Expression
 
@@ -15,10 +15,11 @@ Import-Module Terminal-Icons
 # PSReadLine
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
 # Fzf
 import-Module PSFzf
-Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+# Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
 
 # Env
 $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
