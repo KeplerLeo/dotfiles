@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#000",
+          "style": "plain",
+          "template": "# ",
+          "type": "root"
+        },
+        {
+          "style": "plain",
+          "template": "{{ .UserName }}@{{ .HostName }} ",
+          "type": "session"
+        },
+        {
+          "foreground": "#000",
+          "properties": {
+            "branch_icon": "",
+            "fetch_upstream_icon": false
+          },
+          "style": "plain",
+          "template": "{{ .HEAD }} ",
+          "type": "git"
+        },
+        {
+          "foreground": "#000",
+          "properties": {
+            "style": "agnoster_short"
+          },
+          "style": "plain",
+          "template": "{{ .PWD }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "#000",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#E84855{{ end }}"
+          ],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "% ",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"🏠\"}} @ {{.HostName}}",
+  "osc99": true,
+  "version": 3
+}
