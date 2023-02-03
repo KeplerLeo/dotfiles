@@ -6,7 +6,7 @@
       "segments": [
         {
           "background": "#2b2b2b",
-          "foreground": "#40c4ff",
+          "foreground": "#4c829b",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": " {{ .Path }} ",
@@ -28,7 +28,7 @@
             "{{ if gt .Ahead 0 }}#333333{{ end }}",
             "{{ if gt .Behind 0 }}#333333{{ end }}"
           ],
-          "foreground": "#839496",
+          "foreground": "#40c4ff",
           "leading_diamond": " \ue0b6",
           "style": "diamond",
           "trailing_diamond": "\ue0b4",
@@ -41,15 +41,6 @@
     {
       "alignment": "right",
       "segments": [
-        {
-          "background": "#2b2b2b",
-          "foreground": "#4b893f",
-          "leading_diamond": " \ue0b6",
-          "style": "diamond",
-          "template": "{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
-          "trailing_diamond": "\ue0b4",
-          "type": "node"
-        },
         {
           "background": "#2b2b2b",
           "foreground": "#839496",
@@ -68,7 +59,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#40c4ff",
+          "foreground": "#00FF00",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ef5350{{ end }}"
           ],
