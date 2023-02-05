@@ -11,6 +11,7 @@
           "type": "root"
         },
         {
+          "foreground": "#FFF",
           "style": "plain",
           "template": "{{ .UserName }}@{{ .HostName }} ",
           "type": "session"
