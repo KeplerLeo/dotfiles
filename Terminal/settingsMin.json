@@ -1,24 +1,27 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
         },
         {
-            "command": {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -30,22 +33,26 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "initialCols": 125,
+    "initialCols": 115,
     "initialRows": 45,
-    "language": "en-US",
-    "launchMode": "default",
-    "profiles": {
-        "defaults": {
-            "colorScheme": "One Half Light(modded)",
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "Dracula",
             "cursorShape": "filledBox",
-            "font": {
-                "face": "Inconsolata NFM",
-                "weight": "bold"
+            "font": 
+            {
+                "face": "CaskaydiaCove NFM",
+                "size": 11.0
             },
-            "padding": "4",
-            "scrollbarState": "hidden"
+            "opacity": 35,
+            "padding": "8",
+            "scrollbarState": "hidden",
+            "useAcrylic": true
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -59,7 +66,7 @@
                 "name": "Prompt de comando"
             },
             {
-                "commandline": "\"C:\\Users\\leoke\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\"  -nologo",
+                "commandline": "\"C:\\Users\\leoke\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\" -NoLogo",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
@@ -73,9 +80,10 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
-            "background": "#0C0C0C",
+            "background": "#000000",
             "black": "#0C0C0C",
             "blue": "#0037DA",
             "brightBlack": "#767676",
@@ -88,7 +96,7 @@
             "brightYellow": "#F9F1A5",
             "cursorColor": "#FFFFFF",
             "cyan": "#3A96DD",
-            "foreground": "#CCCCCC",
+            "foreground": "#FFFFFF",
             "green": "#13A10E",
             "name": "Campbell",
             "purple": "#881798",
@@ -131,12 +139,12 @@
             "brightPurple": "#FF92DF",
             "brightRed": "#FF6E6E",
             "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFFFFF",
+            "brightYellow": "#FFFFA5",
             "cursorColor": "#F8F8F2",
             "cyan": "#8BE9FD",
-            "foreground": "#F8F8F2",
+            "foreground": "#FFFFFF",
             "green": "#50FA7B",
-            "name": "Min Dracula",
+            "name": "Dracula",
             "purple": "#FF79C6",
             "red": "#FF5555",
             "selectionBackground": "#44475A",
@@ -182,7 +190,7 @@
             "cyan": "#56B6C2",
             "foreground": "#DCDFE4",
             "green": "#98C379",
-            "name": "One Half Dark(modded)",
+            "name": "One Half Dark(Modded)",
             "purple": "#C678DD",
             "red": "#E06C75",
             "selectionBackground": "#FFFFFF",
@@ -213,29 +221,6 @@
             "yellow": "#C18301"
         },
         {
-            "background": "#FFFFFF",
-            "black": "#383A42",
-            "blue": "#0184BC",
-            "brightBlack": "#4F525D",
-            "brightBlue": "#61AFEF",
-            "brightCyan": "#56B5C1",
-            "brightGreen": "#1C7515",
-            "brightPurple": "#C577DD",
-            "brightRed": "#DF6C75",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#1A6491",
-            "cursorColor": "#000000",
-            "cyan": "#0997B3",
-            "foreground": "#000000",
-            "green": "#0C3605",
-            "name": "One Half Light(modded)",
-            "purple": "#A626A4",
-            "red": "#E45649",
-            "selectionBackground": "#808080",
-            "white": "#000000",
-            "yellow": "#C18301"
-        },
-        {
             "background": "#002B36",
             "black": "#002B36",
             "blue": "#268BD2",
@@ -257,6 +242,52 @@
             "selectionBackground": "#FFFFFF",
             "white": "#EEE8D5",
             "yellow": "#B58900"
+        },
+        {
+            "background": "#001E27",
+            "black": "#002831",
+            "blue": "#2176C7",
+            "brightBlack": "#475B62",
+            "brightBlue": "#708284",
+            "brightCyan": "#819090",
+            "brightGreen": "#475B62",
+            "brightPurple": "#5956BA",
+            "brightRed": "#BD3613",
+            "brightWhite": "#FCF4DC",
+            "brightYellow": "#536870",
+            "cursorColor": "#708284",
+            "cyan": "#259286",
+            "foreground": "#708284",
+            "green": "#738A05",
+            "name": "Solarized Dark - Patched",
+            "purple": "#C61C6F",
+            "red": "#D11C24",
+            "selectionBackground": "#002831",
+            "white": "#EAE3CB",
+            "yellow": "#A57706"
+        },
+        {
+            "background": "#001E27",
+            "black": "#002831",
+            "blue": "#2176C7",
+            "brightBlack": "#006488",
+            "brightBlue": "#178EC8",
+            "brightCyan": "#00B39E",
+            "brightGreen": "#51EF84",
+            "brightPurple": "#E24D8E",
+            "brightRed": "#F5163B",
+            "brightWhite": "#FCF4DC",
+            "brightYellow": "#B27E28",
+            "cursorColor": "#F34B00",
+            "cyan": "#259286",
+            "foreground": "#9CC2C3",
+            "green": "#6CBE6C",
+            "name": "Solarized Dark Higher Contrast",
+            "purple": "#C61C6F",
+            "red": "#D11C24",
+            "selectionBackground": "#003748",
+            "white": "#EAE3CB",
+            "yellow": "#A57706"
         },
         {
             "background": "#FDF6E3",
@@ -353,7 +384,7 @@
     ],
     "showTabsInTitlebar": false,
     "showTerminalTitleInTitlebar": false,
-    "snapToGridOnResize": false,
-    "theme": "system",
+    "theme": "dark",
+    "themes": [],
     "useAcrylicInTabRow": false
 }
