@@ -1,11 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -20,8 +18,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -35,24 +32,21 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialCols": 115,
     "initialRows": 45,
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
+            "adjustIndistinguishableColors": "always",
             "colorScheme": "Dracula",
             "cursorShape": "filledBox",
-            "font": 
-            {
-                "face": "CaskaydiaCove NFM",
-                "size": 11
+            "font": {
+                "face": "Hack NFM",
+                "size": 10.0
             },
-            "opacity": 35,
+            "opacity": 100,
             "padding": "8",
             "scrollbarState": "hidden",
-            "useAcrylic": true
+            "useAcrylic": false
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -80,8 +74,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#000000",
             "black": "#0C0C0C",
@@ -93,7 +86,7 @@
             "brightPurple": "#B4009E",
             "brightRed": "#E74856",
             "brightWhite": "#F2F2F2",
-            "brightYellow": "#F9F1A5",
+            "brightYellow": "#FFFFFF",
             "cursorColor": "#FFFFFF",
             "cyan": "#3A96DD",
             "foreground": "#FFFFFF",
@@ -198,7 +191,7 @@
             "yellow": "#E5C07B"
         },
         {
-            "background": "#FAFAFA",
+            "background": "#FFFFFF",
             "black": "#383A42",
             "blue": "#0184BC",
             "brightBlack": "#4F525D",
@@ -208,7 +201,7 @@
             "brightPurple": "#C577DD",
             "brightRed": "#DF6C75",
             "brightWhite": "#FFFFFF",
-            "brightYellow": "#E4C07A",
+            "brightYellow": "#000000",
             "cursorColor": "#4F525D",
             "cyan": "#0997B3",
             "foreground": "#383A42",
@@ -218,7 +211,7 @@
             "red": "#E45649",
             "selectionBackground": "#FFFFFF",
             "white": "#FAFAFA",
-            "yellow": "#C18301"
+            "yellow": "#000000"
         },
         {
             "background": "#002B36",
