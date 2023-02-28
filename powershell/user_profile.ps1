@@ -2,12 +2,15 @@
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 # Prompt
-$omp_config = Join-Path $PSScriptRoot "./minKL.omp.json"
+$omp_config = Join-Path $PSScriptRoot "./rr.omp.json"
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 #oh-my-posh init pwsh --config C:\Users\leoke\AppData\Local\Programs\oh-my-posh\themes/takuya.omp.json | Invoke-Expression
 
 # Posh Git
 Import-Module posh-git
+
+# Posh Docker
+Import-Module posh-docker
 
 # Terminal Icons
 Import-Module Terminal-Icons
@@ -39,6 +42,3 @@ function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
-
-#Clear
-clear
