@@ -2,9 +2,9 @@
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 # Prompt
-$omp_config = Join-Path $PSScriptRoot "./rr.omp.json"
-oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
-#oh-my-posh init pwsh --config C:\Users\leoke\AppData\Local\Programs\oh-my-posh\themes/takuya.omp.json | Invoke-Expression
+# $omp_config = Join-Path $PSScriptRoot "./minKL.omp.json"
+# oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
+oh-my-posh init pwsh --config C:\Users\leoke\AppData\Local\Programs\oh-my-posh\themes\robbyrussell.omp.json | Invoke-Expression
 
 # Posh Git
 Import-Module posh-git
@@ -36,6 +36,7 @@ Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
 Set-Alias wc 'C:\Program Files\Git\usr\bin\wc.exe'
 Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
 Set-Alias who 'C:\Program Files\Git\usr\bin\who.exe'
+Set-Alias python3 python
 
 # Utilities
 function which ($command) {
