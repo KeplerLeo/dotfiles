@@ -1,7 +1,6 @@
 # aliases
 alias explorer='explorer.exe .'
 alias g="git"
-alias gcm="git commit -m"
 alias gs="git status"
 alias gsl="git stash list"
 alias gc="git checkout"
