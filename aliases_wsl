@@ -1,0 +1,21 @@
+# aliases
+alias explorer='explorer.exe .'
+alias g="git"
+alias gcm="git commit -m"
+alias gs="git status"
+alias gsl="git stash list"
+alias gc="git checkout"
+alias gcp="git cherry-pick"
+alias gb="git branch"
+alias guc="git reset HEAD~"
+alias h="history"
+alias ch='history | grep "git commit"'
+alias home='cd ~/'
+alias gp="git fetch origin --prune"
+
+# clean up branches that no longer exist on origin off local
+alias cb="git remote prune origin && git branch -vv | grep '\[[^]]* gone]' | awk '{ print $1 }' | xargs git branch -D"
+
+alias profile="open ~/.bashc"
+alias containers="docker ps -a"
+alias reload="source ~/.bashrc"
