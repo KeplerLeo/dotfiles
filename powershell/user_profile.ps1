@@ -2,9 +2,8 @@
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 # Prompt
-# $omp_config = Join-Path $PSScriptRoot "./minKL.omp.json"
-# oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
-oh-my-posh init pwsh --config C:\Users\leoke\AppData\Local\Programs\oh-my-posh\themes\robbyrussell.omp.json | Invoke-Expression
+$omp_config = "$HOME\.config\rr.omp.json"
+oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 
 # Posh Git
 Import-Module posh-git
@@ -12,17 +11,10 @@ Import-Module posh-git
 # Posh Docker
 Import-Module posh-docker
 
-# Terminal Icons
-Import-Module Terminal-Icons
-
 # PSReadLine
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
-
-# Fzf
-import-Module PSFzf
-# Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
 
 # Env
 $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
